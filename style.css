@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins'sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.log img{
+    width:150px;
+    height: 130px;
+}
+nav{
+    /* position: fixed; */
+    width: 100%;
+    background: #262626;
+
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 70px;
+}
+.main ul li{
+    list-style: none;
+    display: inline-flex;
+    padding: 20px;
+    margin-right: 40px;
+}
+.main ul li a{
+    color: white;
+    text-decoration: none;
+    transition: 2s;
+}
+.main ul li a:hover{
+    color: aqua;
+    /* transform: translateX(10px); */
+    text-decoration-line: underline;
+    
+}
+.main i{
+    color: white;
+}
+.content{
+    background: url(images/designecologist-Pmh0UoG1vlE-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100%;
+}
+.center{
+    position: absolute;
+    top: 250px;
+    left: 200px;
+    padding: 20px;
+}
+.head{
+    color: blueviolet;
+}
+.continue{
+    
+    position: relative;
+    color: aqua;
+    font-size: 20px;
+    margin-top: 60px;
+    margin-left: 60px;
+    height: 40px;
+    width: 150px;
+    border: 2px solid green;
+    background: transparent;
+    border-radius: 10px;
+    transition: left .4s ease;
+}
+.continue:hover{
+    /* width: 100%; */
+  
+    background:green;
+}
+.form{
+    position: fixed;
+    right: 9%;
+    
+    bottom: 15%;
+    background:pink;
+
+}
+.close{
+    position: fixed;
+    right: 9%;
+    bottom:68%;
+    margin-right: 10px;
+    /* background: red; */
+    color: red;
+    border: none;
+}
+.close:hover{
+    background:rgb(235, 59, 59);
+    color: black;
+
+}
+form {
+  height: 50vh;
+    padding: 20px;
+}
+form label{
+    margin: 10px;
+}
+form input{
+    margin:10px;
+}
+form input[type=text],input[type=password]{
+    padding: 10px;
+    background: transparent;
+}
+/* ..........................about............... */
+.owner h1{
+    text-align: center;
+}
+.owner h2{
+    text-align: center;
+}
+.about{
+    padding: 20px;
+}
+.image img{
+    float: left;
+    width: 170px;
+    padding: 30px;
+    height: 170px;
+}
+.paragraph{
+    margin-top: 50px;
+    margin-left: 40px;
+}
+div img{
+    clear: inherit;
+    width: 150px;
+    height: 150px;
+}
+.service-content{
+    clear: left;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 20px;
+}
+/* scrolling */
+.scroll-down{
+    position: fixed;
+    right: 3%;
+   
+    
+    bottom: 3%;
+    
+}
+.scroll-down ion-icon{
+    margin-top: 10px;
+    margin-left: 15px;
+    border-radius: 50%;
+    background: green;
+    font-size: 30px;
+    scroll-behavior: smooth;
+    /* width: 10%;
+    height: 10%; */
+}
+/* ..................................foooter.................. */
+footer {
+background: #262626;
+width: 100%;
+height: 40vh;
+color: white;
+}
+footer span{
+    text-align: center;
+}
+/* ..................responsive design...................... */
+nav .fas{
+display: none;
+}
+@media(max-width:600px){
+    nav .fas{
+        display: block;
+        font-size: 15px;
+    }
+    .main ul{
+        /* position: fixed; */
+        right: 20%;
+        bottom: 10%;
+        display: block;
+        /* background: white; */
+        color:white;
+        padding: 10px;
+        
+    }
+    .fa-magnifying-glass{
+       display: block;     
+    }
+    .main ul li{
+        padding: 10px;
+    }
+    .main ul li a{
+        color:black;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        /* left: 0px; */
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top:25px;
+        right: 25px;
+
+    }
+}

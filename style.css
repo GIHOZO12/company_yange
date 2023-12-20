@@ -11,8 +11,9 @@ html{
     height: 130px;
 }
 nav{
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
+    height: 25%;
     background: #262626;
 
 }
@@ -42,12 +43,19 @@ nav{
 .main i{
     color: white;
 }
+select{
+    font-size: 20px;
+    width: 95%;
+}
+ion-icon{
+    color: aliceblue;
+}
 .content{
     background: url(images/designecologist-Pmh0UoG1vlE-unsplash.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 90vh;
     width: 100%;
 }
 .center{
@@ -57,7 +65,29 @@ nav{
     padding: 20px;
 }
 .head{
-    color: blueviolet;
+    color: skyblue;
+}
+.choose{
+    font-size: 30px;
+}
+.order{
+    position: fixed;
+    right: 9%;
+    bottom: 2%;
+    width: 80%;
+    height: 70vh;
+   
+    background:radial-gradient(purple,gray,blue);
+    
+}
+.closee {
+    position:fixed;
+    right: 9%;
+    bottom: 68%;
+    font-size: 20px;
+    color:#ff004f;
+    background: transparent;
+    border: none;
 }
 .continue{
     
@@ -73,19 +103,51 @@ nav{
     border-radius: 10px;
     transition: left .4s ease;
 }
+.submit{
+    position: relative;
+    color: aqua;
+    font-size: 20px;
+    margin-top: 60px;
+    margin-left: 60px;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    background:green;
+    border: 2px solid green;   
+}
+.signup{
+    font-size: 30px;
+    color: blue;
+    text-decoration: none;
+}
+.signup:hover{
+    text-decoration-line: underline;
+}
 .continue:hover{
     /* width: 100%; */
   
     background:green;
+    box-shadow: 0px,0px,0px, #ff004f
+               0px ,0px ,0px, #ff004f
+     0px ,0px ,0px, #ff004f;
 }
 .form{
     position: fixed;
     right: 9%;
-    
+    width: 80%;
+    /* height: 20vh; */
+    border: 1px groove green;
     bottom: 15%;
-    background:pink;
+    background:radial-gradient(blue 20%,skyblue 10%,#ff004f 30% ,#262626 20%,darkblue 30%,yellow 30%,yellowgreen 50%,white 50%,skyblue 50%,gray 50%,#ff004f 30%,#262626 100%);
 
 }
+.login{
+    font-size: 30px;
+    color:white;
+}
+/* .paragraph{
+    color: white;
+} */
 .close{
     position: fixed;
     right: 9%;
@@ -94,6 +156,7 @@ nav{
     /* background: red; */
     color: red;
     border: none;
+    font-size: 20px;
 }
 .close:hover{
     background:rgb(235, 59, 59);
@@ -113,6 +176,12 @@ form input{
 form input[type=text],input[type=password]{
     padding: 10px;
     background: transparent;
+    text-transform: uppercase;
+    width: 40%;
+}
+.new-form{
+    position: fixed;
+    background: linear-gradient(rgb(12,34,56),rgb(34,78,90));
 }
 /* ..........................about............... */
 .owner h1{
@@ -124,14 +193,21 @@ form input[type=text],input[type=password]{
 .about{
     padding: 20px;
 }
+.image{
+   /* margin-left: 200px; */
+}
 .image img{
     float: left;
-    width: 170px;
+    width: 200px;
     padding: 30px;
-    height: 170px;
+    height: 300px;
+    /* border-radius: 50%; */
+    background:#262626;
+    /* background: #262626; */
+    border-radius: 50%;
 }
 .paragraph{
-    margin-top: 50px;
+    margin-top: 100px;
     margin-left: 40px;
 }
 div img{
@@ -145,6 +221,11 @@ div img{
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     grid-gap: 40px;
     margin-top: 20px;
+    margin-left: 20px;
+}
+.service-content div img{
+    width: 300px;
+    height: 300px;
 }
 /* scrolling */
 .scroll-down{
@@ -165,15 +246,111 @@ div img{
     /* width: 10%;
     height: 10%; */
 }
+/* .......................product.......................... */
+.service{
+    clear: left;
+}
+.service h1{
+    text-align: center;
+}
+.prouct-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin: 20px;
+    margin-top: 10%;
+    margin-left: 20px;
+}
+.prouct-list div img{
+    width: 300px;
+    height: 300px;
+}
+.buy{
+    text-decoration: none;
+    text-transform: uppercase;
+    /* background: green;
+    color: white;
+    width: 20%;
+    height: 5%;
+    border-radius: 10px; */
+}
+.buy:hover{
+    text-decoration-line: underline;
+}
+.new-product-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin: 10%;
+}
+.new-product-list div img{
+    width: 300px;
+    height: 300px;
+}
+.next{
+background: green;
+border-radius: 10px;
+margin-top: 0;
+margin-left: 100px;
+padding: 6px;
+width: 20%;
+margin-bottom: 20px;
+}
+.next i{
+    color: white;
+    font-size: 20px;
+}
 /* ..................................foooter.................. */
 footer {
 background: #262626;
 width: 100%;
-height: 40vh;
+height: 45vh;
 color: white;
+padding: 30px;
 }
-footer span{
-    text-align: center;
+.footer {
+ float: left;  
+
+}
+.footer h2{
+    text-align: right;
+}
+.footer input{
+background:palevioletred;
+width: 90%;
+height: 6vh;
+/* padding: 10px; */
+margin: 10px;
+
+}
+.footer textarea{
+    background: palevioletred;
+    width: 90%;
+    height: 6vh;
+}
+.next{
+    color: white;
+}
+
+.feedback{
+    clear: left;
+    /* justify-content: space-between; */
+    right: 9%;
+    bottom: 10%;
+}
+.feedback i{
+    color: #ff004f;
+}
+footer .fa-brands{
+    padding: 10px;
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    text-decoration-line: underline;
 }
 /* ..................responsive design...................... */
 nav .fas{
@@ -184,15 +361,21 @@ display: none;
         display: block;
         font-size: 15px;
     }
+    .log{
+        margin-bottom: 20%;
+    }
     .main ul{
         /* position: fixed; */
-        right: 20%;
+        right: 200px;
         bottom: 10%;
-        display: block;
-        /* background: white; */
+        display: white;
+        /* background: #ff004f; */
         color:white;
         padding: 10px;
         
+    }
+    .center{
+        height: 95vh;
     }
     .fa-magnifying-glass{
        display: block;     
@@ -207,8 +390,8 @@ display: none;
         background: #ff004f;
         position: fixed;
         top: 0;
-        /* left: 0px; */
-        right: -200px;
+        right: 0px;
+       left: 200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;

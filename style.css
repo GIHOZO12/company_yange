@@ -117,7 +117,7 @@ ion-icon{
 }
 .signup{
     font-size: 30px;
-    color: blue;
+    color:black;
     text-decoration: none;
 }
 .signup:hover{
@@ -131,15 +131,55 @@ ion-icon{
                0px ,0px ,0px, #ff004f
      0px ,0px ,0px, #ff004f;
 }
+.label{
+    margin: 20px;
+    /* align-items: center;
+    justify-content: center; */
+}
+.label input{
+    padding: 10px;  
+}
+label{
+    margin: 10px;
+    color: white;
+}
+
+.label>label{
+    display: flex;
+
+}
 .form{
     position: fixed;
     right: 9%;
-    width: 80%;
+    width: 40%;
     /* height: 20vh; */
     border: 1px groove green;
     bottom: 15%;
-    background:radial-gradient(blue 20%,skyblue 10%,#ff004f 30% ,#262626 20%,darkblue 30%,yellow 30%,yellowgreen 50%,white 50%,skyblue 50%,gray 50%,#ff004f 30%,#262626 100%);
+    background:radial-gradient(blue 20%,skyblue 10%,#ff004f 30% ,#262626 20%,darkblue 30%,yellow 30%,yellowgreen 50%,white 50%,skyblue 50%,gray 50%,blue 30%,#262626 100%);
 
+}
+/* .form-control{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+} */
+.form-control label{
+    display: inline-block;
+
+}
+.form-control input{
+    border: 2px solid black;
+    display: block;
+    font-size: 14px;
+    border-radius: 8px;
+    font-family: inherit;
+    /* width: 100%; */
+
+}
+.form-control i{
+    /* position: absolute;
+  right: 1px;
+  margin-bottom: 40px; */
+ 
 }
 .login{
     font-size: 30px;
@@ -151,7 +191,7 @@ ion-icon{
 .close{
     position: fixed;
     right: 9%;
-    bottom:68%;
+    bottom:85%;
     margin-right: 10px;
     /* background: red; */
     color: red;
@@ -165,22 +205,24 @@ ion-icon{
 }
 form {
   height: 50vh;
-    padding: 20px;
+    /* padding: 20px; */
 }
 form label{
-    margin: 10px;
+    /* margin: 10px; */
 }
-form input{
+/* form input{
     margin:10px;
-}
-form input[type=text],input[type=password]{
-    padding: 10px;
-    background: transparent;
-    text-transform: uppercase;
-    width: 40%;
-}
+} */
+ form input[type=text],input[type=password]{
+    /* padding: 10px;
+    /* background: transparent; */
+    /* text-transform: uppercase;
+    width: 40%; */
+}  */
 .new-form{
-    position: fixed;
+    position:fixed;
+    /* height: 20%;
+    width: 10%; */
     background: linear-gradient(rgb(12,34,56),rgb(34,78,90));
 }
 /* ..........................about............... */
@@ -317,17 +359,24 @@ padding: 30px;
 }
 .footer input{
 background:palevioletred;
-width: 90%;
-height: 6vh;
-/* padding: 10px; */
+padding: 10px;
 margin: 10px;
 
 }
+#myfooter{
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 50px; */
+    flex-wrap: wrap;
+}
 .footer textarea{
     background: palevioletred;
-    width: 90%;
-    height: 6vh;
+    /* width: 20%; */
+    height: 50px;
 }
+/* .footer4{
+    margin-left: 100px;
+} */
 .next{
     color: white;
 }
@@ -364,21 +413,22 @@ display: none;
     .log{
         margin-bottom: 20%;
     }
-    .main ul{
-        /* position: fixed; */
-        right: 200px;
-        bottom: 10%;
-        display: white;
-        /* background: #ff004f; */
-        color:white;
-        padding: 10px;
-        
+    .center{
+        position: absolute;
+    top: 250px;
+    left: 0px;
+    padding: 20px; 
+    height: 20vh;
+    }
+    .head{
+        margin-right: 40%;
     }
     .center{
         height: 95vh;
     }
     .fa-magnifying-glass{
-       display: block;     
+       display: block;
+       bottom: 90%;     
     }
     .main ul li{
         padding: 10px;
@@ -387,14 +437,15 @@ display: none;
         color:black;
     }
     nav ul{
-        background: #ff004f;
+        background:skyblue;
         position: fixed;
         top: 0;
         right: 0px;
-       left: 200px;
+       /* left: 200px; */
         width: 200px;
         height: 100vh;
         padding-top: 50px;
+        transition: right 0.4s;
     }
     nav ul .fas{
         position: absolute;
@@ -402,4 +453,11 @@ display: none;
         right: 25px;
 
     }
+    footer{
+        height: 100vh;
+    }
+    .continue{
+        margin-left: 0px;
+    }
+
 }

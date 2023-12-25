@@ -10,6 +10,9 @@ html{
     width:150px;
     height: 130px;
 }
+/* .select{
+    transition: down 0.4s;
+} */
 nav{
     position: fixed;
     width: 100%;
@@ -51,12 +54,13 @@ ion-icon{
     color: aliceblue;
 }
 .content{
-    background: url(images/designecologist-Pmh0UoG1vlE-unsplash.jpg);
+    background: url(images/mm\ \(2\).jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 130vh;
     width: 100%;
+   
 }
 .center{
     position: absolute;
@@ -65,7 +69,7 @@ ion-icon{
     padding: 20px;
 }
 .head{
-    color: skyblue;
+    color:white;
 }
 .choose{
     font-size: 30px;
@@ -92,8 +96,8 @@ ion-icon{
 .continue{
     
     position: relative;
-    color: aqua;
-    font-size: 20px;
+    color:white;
+    font-size: 25px;
     margin-top: 60px;
     margin-left: 60px;
     height: 40px;
@@ -225,6 +229,9 @@ form label{
     width: 10%; */
     background: linear-gradient(rgb(12,34,56),rgb(34,78,90));
 }
+select{
+    transition: down 0.4s;
+}
 /* ..........................about............... */
 .owner h1{
     text-align: center;
@@ -292,6 +299,9 @@ div img{
 .service{
     clear: left;
 }
+/* .next-content div{
+    display: none;
+} */
 .service h1{
     text-align: center;
 }
@@ -355,7 +365,7 @@ padding: 30px;
 
 }
 .footer h2{
-    text-align: right;
+    text-align: center;
 }
 .footer input{
 background:palevioletred;
@@ -409,9 +419,15 @@ display: none;
     nav .fas{
         display: block;
         font-size: 15px;
+        /* bottom: 100%; */
+        top:0px;
+        margin-bottom: 20%;
     }
     .log{
         margin-bottom: 20%;
+    }
+    .head{
+        top: 0;
     }
     .center{
         position: absolute;
@@ -424,7 +440,7 @@ display: none;
         margin-right: 40%;
     }
     .center{
-        height: 95vh;
+        height: 100vh;
     }
     .fa-magnifying-glass{
        display: block;
@@ -434,10 +450,10 @@ display: none;
         padding: 10px;
     }
     .main ul li a{
-        color:black;
+        color:white;
     }
     nav ul{
-        background:skyblue;
+        background:#ff004f;
         position: fixed;
         top: 0;
         right: 0px;
@@ -449,15 +465,70 @@ display: none;
     }
     nav ul .fas{
         position: absolute;
-        top:25px;
-        right: 25px;
+        top:20px;
+        right: 140px;
+        bottom: 70%;
 
     }
-    footer{
-        height: 100vh;
+    .service-content{
+        /* margin-left: 20px; */
+        left: 0;
+        right: 0;
+    }
+    /* .main i{
+        bottom:20%;
+    } */
+    footer a{
+        display: inline-flex;
+        
     }
     .continue{
         margin-left: 0px;
+        bottom: 40px;
+        /* margin-top: 10px;
+        margin-bottom: 20px; */
     }
-
+    /* .submit{
+        bottom: 47px;
+        left: 0;
+        /* display: flex; */ */
+        /* flex-direction: column;
+        /* bottom: 45x; */
+        .fa-magnifying-glass{
+       /* margin: 8% auto;
+       margin-left: 20px; */
+       top:20px;
+        right: 140px;
+        bottom: 70%;
+    }
+    .form{
+        top:20px;
+        left: 0;
+        width: 100%;
+    }
+    .footer {
+     /* display: flex;
+     flex-direction: row; */
+    }
+    footer{
+        height: 90vh;
+    }
+    .log img{
+        width:150px;
+        height: 80px;
+    }
+    nav{
+        height: 15%;
+    }
+    .scroll-down {
+       position: fixed;
+       right: 15%;
+    }
+    .close{
+        right: 30%;
+    }
+    .content{
+        height: 100vh;
+    }
+    
 }

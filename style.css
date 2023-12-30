@@ -1,14 +1,31 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'poppins'sans-serif;
+    font-family: 'poppins',sans-serif;
+}
+:root{
+    --primary-color:white;
+    --secondar-color:#262626;
+}
+body{
+   background-color: var(--primary-color);
+   color: var(--secondar-color); 
+}
+#changecolor{
+    font-size: 30px;
+}
+.dark-theme{
+    --primary-color:#262626;
+    --secondar-color:white;
 }
 html{
-    scroll-behavior: smooth;
+     scroll-behavior: smooth; 
+  
 }
 .log img{
     width:150px;
-    height: 130px;
+    height: 88px;
+    font-size: 20px;
 }
 /* .select{
     transition: down 0.4s;
@@ -16,8 +33,8 @@ html{
 nav{
     position: fixed;
     width: 100%;
-    height: 25%;
-    background: #262626;
+    height: 16%;
+    background:var(--secondar-color);
 
 }
 .main{
@@ -33,9 +50,9 @@ nav{
     margin-right: 40px;
 }
 .main ul li a{
-    color: white;
+    
+    color: var(--primary-color);
     text-decoration: none;
-    transition: 2s;
 }
 .main ul li a:hover{
     color: aqua;
@@ -44,14 +61,14 @@ nav{
     
 }
 .main i{
-    color: white;
+    color:var(--primary-color);
 }
 select{
     font-size: 20px;
     width: 95%;
 }
 ion-icon{
-    color: aliceblue;
+    color: var(--primary-color);
 }
 .content{
     background: url(images/mm\ \(2\).jpg);
@@ -69,9 +86,10 @@ ion-icon{
     padding: 20px;
 }
 .head{
-    color:white;
+    color:var(--primary-color);
 }
 .choose{
+    margin: 20px;
     font-size: 30px;
 }
 .order{
@@ -84,6 +102,42 @@ ion-icon{
     background:radial-gradient(purple,gray,blue);
     
 }
+.find{
+    display: none;
+    position: fixed;
+    top:120px;
+    left:900px;
+    width: 20%;
+    height: 52px;
+    border-radius: 50px;
+    background: gray;
+    transition: right 0.4s;
+}
+.find input{
+   
+    background-color: purple;
+    padding: 15px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+
+}
+.find label{
+    right: 2%;
+    top:110px;
+display: inline-flex;
+}
+/* .find i{
+    display: inline-flex;
+
+      font-size: 30px;
+    color:var(--primary-color); 
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    border-radius:10px;
+    height: 50%;
+    background: gray; 
+}  */
 .closee {
     position:fixed;
     right: 9%;
@@ -96,7 +150,7 @@ ion-icon{
 .continue{
     
     position: relative;
-    color:white;
+    color:var(--primary-color);
     font-size: 25px;
     margin-top: 60px;
     margin-left: 60px;
@@ -121,7 +175,7 @@ ion-icon{
 }
 .signup{
     font-size: 30px;
-    color:black;
+    color:var(--secondar-color);
     text-decoration: none;
 }
 .signup:hover{
@@ -145,7 +199,7 @@ ion-icon{
 }
 label{
     margin: 10px;
-    color: white;
+    color: var(--primary-color);
 }
 
 .label>label{
@@ -170,6 +224,14 @@ label{
     display: inline-block;
 
 }
+.new-div{
+    position: absolute;
+    top:220px;
+    left: 600px;
+    width: 20%;
+    height: 120px;
+    background: yellow;
+}
 .form-control input{
     border: 2px solid black;
     display: block;
@@ -187,7 +249,7 @@ label{
 }
 .login{
     font-size: 30px;
-    color:white;
+    color:var(--primary-color);
 }
 /* .paragraph{
     color: white;
@@ -204,7 +266,7 @@ label{
 }
 .close:hover{
     background:rgb(235, 59, 59);
-    color: black;
+    color: var(--secondar-color);
 
 }
 form {
@@ -229,6 +291,13 @@ form label{
     width: 10%; */
     background: linear-gradient(rgb(12,34,56),rgb(34,78,90));
 }
+/* .next:hover{
+    background: transparent;
+    color: black;
+}
+.next i:hover{
+    color: black;
+} */
 select{
     transition: down 0.4s;
 }
@@ -251,7 +320,7 @@ select{
     padding: 30px;
     height: 300px;
     /* border-radius: 50%; */
-    background:#262626;
+    background:var(--secondar-color);
     /* background: #262626; */
     border-radius: 50%;
 }
@@ -264,6 +333,9 @@ div img{
     width: 150px;
     height: 150px;
 }
+ /* .service-content div{
+    background: gray;
+} */
 .service-content{
     clear: left;
     display: grid;
@@ -271,10 +343,15 @@ div img{
     grid-gap: 40px;
     margin-top: 20px;
     margin-left: 20px;
+   
 }
+
+
+
 .service-content div img{
     width: 300px;
     height: 300px;
+    border-radius: 10px;
 }
 /* scrolling */
 .scroll-down{
@@ -285,15 +362,20 @@ div img{
     bottom: 3%;
     
 }
-.scroll-down ion-icon{
+.scroll-down {
     margin-top: 10px;
     margin-left: 15px;
     border-radius: 50%;
     background: green;
-    font-size: 30px;
-    scroll-behavior: smooth;
+    font-size: 40px;
+    
+  
     /* width: 10%;
     height: 10%; */
+}
+.scroll-down a{
+    color: var(--primary-color);
+    scroll-behavior: smooth;
 }
 /* .......................product.......................... */
 .service{
@@ -316,6 +398,7 @@ div img{
 .prouct-list div img{
     width: 300px;
     height: 300px;
+    border-radius: 10px;
 }
 .buy{
     text-decoration: none;
@@ -338,6 +421,7 @@ div img{
 .new-product-list div img{
     width: 300px;
     height: 300px;
+    border-radius: 10px;
 }
 .next{
 background: green;
@@ -349,19 +433,41 @@ width: 20%;
 margin-bottom: 20px;
 }
 .next i{
-    color: white;
+    color: var(--primary-color);
     font-size: 20px;
+}
+.next-content {
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+grid-gap: 40px;
+
+} 
+.next-content   div img{
+    width: 300px;
+    height: 300px;
+
+    border-radius: 10px;
+}
+.next-content h1{
+    text-align: center;
+}
+.down-arrow{
+    margin: 10%;
+    text-decoration: none;
+}
+.scroll-down{
+    scroll-behavior: smooth;
 }
 /* ..................................foooter.................. */
 footer {
-background: #262626;
+background: var(--secondar-color);
 width: 100%;
-height: 45vh;
-color: white;
+height: 70vh;
+color: var(--primary-color);
 padding: 30px;
 }
 .footer {
- float: left;  
+ /* float: left;   */
 
 }
 .footer h2{
@@ -379,37 +485,90 @@ margin: 10px;
     /* padding: 50px; */
     flex-wrap: wrap;
 }
+
 .footer textarea{
     background: palevioletred;
     /* width: 20%; */
     height: 50px;
 }
-/* .footer4{
-    margin-left: 100px;
-} */
+
 .next{
-    color: white;
+    color: var(--primary-color);
 }
 
-.feedback{
-    clear: left;
-    /* justify-content: space-between; */
-    right: 9%;
-    bottom: 10%;
-}
 .feedback i{
     color: #ff004f;
 }
+.feedback span{
+    text-align: center;
+}
 footer .fa-brands{
     padding: 10px;
-    color: white;
+    color: var(--primary-color);
+}
+.footer i{
+    border:  1px solid var(--primary-color);
+    border-radius: 50%;
+    margin: 5px;
+}
+.footer i:hover{
+    background: skyblue;
+    color: var(--secondar-color);
 }
 footer a{
     text-decoration: none;
-    color: white;
+    color: var(--primary-color);
+    padding: 20px;
+   
 }
-footer a:hover{
-    text-decoration-line: underline;
+.new-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--primary-color);
+
+}
+/* ........................payment-page............................... */
+.payment{
+    /* margin: 20% auto; */
+    margin: 20%;
+
+    background:url(images/money.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.payment-title{
+    margin: 10px;
+    padding: 20px;
+}
+.payment-title input{
+    width: 80%;
+    padding: 20px;
+}
+.payment-title h1{
+    color: var(--primary-color);
+}
+.payment-title h2{
+    color: var(--primary-color);
+}
+.return-back i{
+    color:var(--primary-color);
+    font-size: 50px;
+    transform: translateX(20px);
+}
+.buy-button{
+    width: 70%;
+    background: orange;
+    margin: 10px;
+    margin-left: 25px;
+    color:var(--primary-color);
+   
+    padding: 10px;
+    border-radius: 10px;
+}
+.payment-title>label{
+    display: flex;
 }
 /* ..................responsive design...................... */
 nav .fas{
@@ -450,11 +609,11 @@ display: none;
         padding: 10px;
     }
     .main ul li a{
-        color:white;
+        color:var(--primary-color);
     }
     nav ul{
         background:#ff004f;
-        position: fixed;
+        position: absolute;
         top: 0;
         right: 0px;
        /* left: 200px; */
@@ -511,7 +670,7 @@ display: none;
      flex-direction: row; */
     }
     footer{
-        height: 90vh;
+        height: 200vh;
     }
     .log img{
         width:150px;
@@ -528,7 +687,32 @@ display: none;
         right: 30%;
     }
     .content{
-        height: 100vh;
+        height: 130vh;
+    }
+    .continue{
+      bottom: 5%;
+    }
+    .submit{
+        bottom: 10%;
+    }
+    .new-footer{
+        display: flex;
+        flex-direction: column;
+    }
+    #changecolor{
+        margin-bottom: 20%;
+    }
+    .find{
+        top:120px;
+        left:900px;
+        width: 70%;
+        height: 52px;
+        left: 10px;
+    }
+    .find label{
+        right: 0;
+        top:90px;
+    display: inline-flex;
     }
     
 }
